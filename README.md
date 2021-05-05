@@ -1,2 +1,2 @@
 # Swift-UI-Core-Data-Order-Pizza-
-![](https://media.giphy.com/media/FcRMWOviwxkoq7LNds/giphy.mp4)
+![](https://media.giphy.com/media/FcRMWOviwxkoq7LNds/giphy.gif)
