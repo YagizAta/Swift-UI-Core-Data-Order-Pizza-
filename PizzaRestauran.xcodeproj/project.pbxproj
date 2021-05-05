@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		84E8AE9F263FB750001AD662 /* PizzaRestauranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AE9E263FB750001AD662 /* PizzaRestauranApp.swift */; };
 		84E8AEA1263FB750001AD662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEA0263FB750001AD662 /* ContentView.swift */; };
-		84E8AEA3263FB755001AD662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E8AEA2263FB755001AD662 /* Assets.xcassets */; };
-		84E8AEA6263FB755001AD662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E8AEA5263FB755001AD662 /* Preview Assets.xcassets */; };
 		84E8AEA8263FB755001AD662 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEA7263FB755001AD662 /* Persistence.swift */; };
-		84E8AEAB263FB755001AD662 /* PizzaRestauran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEA9263FB755001AD662 /* PizzaRestauran.xcdatamodeld */; };
+		84E8AEB6263FB8DB001AD662 /* PizzaRestauran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEB4263FB8DB001AD662 /* PizzaRestauran.xcdatamodeld */; };
+		84E8AEBB263FBA50001AD662 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEB9263FBA50001AD662 /* Order+CoreDataClass.swift */; };
+		84E8AEBC263FBA50001AD662 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AEBA263FBA50001AD662 /* Order+CoreDataProperties.swift */; };
+		84E8AED5263FC221001AD662 /* OrderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8AED4263FC221001AD662 /* OrderSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +23,11 @@
 		84E8AEA2263FB755001AD662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E8AEA5263FB755001AD662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84E8AEA7263FB755001AD662 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		84E8AEAA263FB755001AD662 /* PizzaRestauran.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzaRestauran.xcdatamodel; sourceTree = "<group>"; };
 		84E8AEAC263FB755001AD662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E8AEB5263FB8DB001AD662 /* PizzaRestauran.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzaRestauran.xcdatamodel; sourceTree = "<group>"; };
+		84E8AEB9263FBA50001AD662 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84E8AEBA263FBA50001AD662 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84E8AED4263FC221001AD662 /* OrderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,16 @@
 		84E8AE9D263FB750001AD662 /* PizzaRestauran */ = {
 			isa = PBXGroup;
 			children = (
+				84E8AEB9263FBA50001AD662 /* Order+CoreDataClass.swift */,
+				84E8AEBA263FBA50001AD662 /* Order+CoreDataProperties.swift */,
 				84E8AE9E263FB750001AD662 /* PizzaRestauranApp.swift */,
 				84E8AEA0263FB750001AD662 /* ContentView.swift */,
 				84E8AEA2263FB755001AD662 /* Assets.xcassets */,
 				84E8AEA7263FB755001AD662 /* Persistence.swift */,
+				84E8AEB4263FB8DB001AD662 /* PizzaRestauran.xcdatamodeld */,
 				84E8AEAC263FB755001AD662 /* Info.plist */,
-				84E8AEA9263FB755001AD662 /* PizzaRestauran.xcdatamodeld */,
 				84E8AEA4263FB755001AD662 /* Preview Content */,
+				84E8AED4263FC221001AD662 /* OrderSheet.swift */,
 			);
 			path = PizzaRestauran;
 			sourceTree = "<group>";
@@ -132,8 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E8AEA6263FB755001AD662 /* Preview Assets.xcassets in Resources */,
-				84E8AEA3263FB755001AD662 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E8AEBC263FBA50001AD662 /* Order+CoreDataProperties.swift in Sources */,
 				84E8AEA8263FB755001AD662 /* Persistence.swift in Sources */,
 				84E8AEA1263FB750001AD662 /* ContentView.swift in Sources */,
-				84E8AEAB263FB755001AD662 /* PizzaRestauran.xcdatamodeld in Sources */,
+				84E8AEB6263FB8DB001AD662 /* PizzaRestauran.xcdatamodeld in Sources */,
+				84E8AEBB263FBA50001AD662 /* Order+CoreDataClass.swift in Sources */,
+				84E8AED5263FC221001AD662 /* OrderSheet.swift in Sources */,
 				84E8AE9F263FB750001AD662 /* PizzaRestauranApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +346,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		84E8AEA9263FB755001AD662 /* PizzaRestauran.xcdatamodeld */ = {
+		84E8AEB4263FB8DB001AD662 /* PizzaRestauran.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				84E8AEAA263FB755001AD662 /* PizzaRestauran.xcdatamodel */,
+				84E8AEB5263FB8DB001AD662 /* PizzaRestauran.xcdatamodel */,
 			);
-			currentVersion = 84E8AEAA263FB755001AD662 /* PizzaRestauran.xcdatamodel */;
+			currentVersion = 84E8AEB5263FB8DB001AD662 /* PizzaRestauran.xcdatamodel */;
 			path = PizzaRestauran.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

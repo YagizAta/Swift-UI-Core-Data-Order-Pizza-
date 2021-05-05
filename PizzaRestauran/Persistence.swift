@@ -14,9 +14,13 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
+                    let newItem = Order(context: viewContext)
+                    newItem.status = "pending"
+                    newItem.id = UUID()
+                    newItem.tableNumber = "12"
+                    newItem.pizzaType = "Margherita"
+                    newItem.numberOfSlices = 4
+                }
         do {
             try viewContext.save()
         } catch {
@@ -31,6 +35,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
+        
         container = NSPersistentContainer(name: "PizzaRestauran")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
